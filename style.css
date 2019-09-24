@@ -1,31 +1,55 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     padding: 0;
     margin: 0;
     transform-style: preserve-3d;
-    perspective: 1000px;
+    perspective: 100px;
 }
-.information-panel{
+
+.information-panel {
     width: 300px;
-    height: 150px;
-    margin: auto ;
+    height: auto;
+    margin: auto;
     margin-top: 100px;
-    border: 5px solid coral;
-    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
-.main{
-    z-index: 100px;
+
+.panel {
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid coral;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#p1 {
     background-color: coral;
-    margin: 0;
-    padding: 3px 10px;
+    padding: 0;
+    top: 0;
+    z-index: 30px;
+}
+
+#p2 {
+    top: 110px;
+    z-index: 20px;
+}
+
+#p3 {
+    z-index: 10px;
+    top: 220px;
+}
+
+.main {
+
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-}
-.lesson{
-    z-index: 10px;
-}
-.main p{
-    text-align: center;
 }
