@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
+    
 }
-
+h1{
+    font-size: 16px;
+}
 body {
     padding: 0;
     margin: 0;
@@ -27,7 +30,10 @@ body {
     align-items: center;
     border: 5px solid coral;
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
+}
+.hiden {
+    color: rgb(255, 255, 255);
 }
 
 #p1 {
@@ -53,11 +59,4 @@ body {
 {
     z-index: 0;
     top:330px;
-}
-
-.main {
-
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
 }

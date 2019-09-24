@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     let main = $('#p1');
-    let inf = $('.information-panel').children('.panel');
+    let inf = $('.panel').children('h1');
     console.log(inf);
     main.mousedown(function () { 
         if($('.panel').hasClass('hiden')){
@@ -12,21 +12,19 @@ $(document).ready(function () {
             t.add({
                 targets:'#p4',
                 top:330,
-                opacity:1
             })
             t.add({
                 targets:'#p3',
                 top:220,
-                opacity:1
             })
             t.add({
                 targets: '#p2',
                 top: 110,
-                opacity:1
             })
             t.add({
-                targets: '#p1',
-                translateZ: -20
+                targets: ['#p1',inf],
+                translateZ: -2,
+                color:'rgb(0,0,0)'
             }) 
             
             
@@ -36,23 +34,21 @@ $(document).ready(function () {
                 duration:150
             })
             tl.add({
-                targets: '#p1',
-                translateZ: 20
+                targets: ['#p1',inf],
+                translateZ: 2,
             }) 
             tl.add({
                 targets: '#p2',
-                top: 0,
-                opacity:0,
+                top: 20,
             })
             tl.add({
                 targets:'#p3',
-                top:0,
-                opacity:0,
+                top:40,
             })
             tl.add({
                 targets:'#p4',
-                top:0,
-                opacity:0
+                top:60,
+
             })
     
         }
