@@ -14,8 +14,8 @@ body {
     height: auto;
     margin: auto;
     margin-top: 100px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
 }
 
 .panel {
@@ -23,7 +23,7 @@ body {
     height: 100px;
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border: 5px solid coral;
     border-radius: 15px;
@@ -32,6 +32,9 @@ body {
 
 #p1 {
     background-color: coral;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
     padding: 0;
     top: 0;
     z-index: 30px;
@@ -45,6 +48,11 @@ body {
 #p3 {
     z-index: 10px;
     top: 220px;
+}
+#p4
+{
+    z-index: 0;
+    top:330px;
 }
 
 .main {

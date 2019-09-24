@@ -7,7 +7,12 @@ $(document).ready(function () {
         if($('.panel').hasClass('hiden')){
             let t = anime.timeline({
                 easing:'linear',
-                duration:250
+                duration:150
+            })
+            t.add({
+                targets:'#p4',
+                top:330,
+                opacity:1
             })
             t.add({
                 targets:'#p3',
@@ -28,7 +33,7 @@ $(document).ready(function () {
         }else{
             let tl = anime.timeline({
                 easing:'linear',
-                duration:250
+                duration:150
             })
             tl.add({
                 targets: '#p1',
@@ -37,12 +42,17 @@ $(document).ready(function () {
             tl.add({
                 targets: '#p2',
                 top: 0,
-                opacity:1,
+                opacity:0,
             })
             tl.add({
                 targets:'#p3',
                 top:0,
-                opacity:1,
+                opacity:0,
+            })
+            tl.add({
+                targets:'#p4',
+                top:0,
+                opacity:0
             })
     
         }
